@@ -21,3 +21,12 @@ yarn tsc --init
 ```
 yarn ts-node src/test.ts
 ```
+
+## C++
+```bash
+g++ -o test ./src/test.cpp
+
+./test
+```
+
+
