@@ -13,6 +13,8 @@ int main() {
     std::vector<int> a;
     std::vector<int> b = a;
 
+    b.push_back(1);
+
     print(a);
     print(b);
 }
