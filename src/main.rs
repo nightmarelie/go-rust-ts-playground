@@ -5,5 +5,4 @@ fn main() {
     b.push(1);
 
     println!("{:?}", b);
-    println!("{:?}", a)≠;
 }
