@@ -1,9 +1,15 @@
 fn main() {
-    let mut a: Vec<i32> = vec![];
-    let b = &mut a;
+//     let mut a = vec![];
+//     let b = &mut a;
+//
+//     b.push(1);
+//
+//     println!("{:?}", b);
+//     println!("{:?}", a);
 
-    b.push(1);
+    let mut x = 5;
+    let z = &mut x;
 
-    println!("{:?}", b);
-    println!("{:?}", a);
+    *z = 7;
+    println!("{:?}", z);
 }
