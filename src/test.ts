@@ -1,6 +1,7 @@
-const a: number[] = [];
-const b: number[] = a;
+enum TSEnum {
+    A = 'a',
+    B = 'b',
+    C = 'c'
+}
 
-b.push(1);
-
-console.log(a);
+console.log(TSEnum.A, TSEnum.B, TSEnum.C);

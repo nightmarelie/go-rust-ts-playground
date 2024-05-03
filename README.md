@@ -29,4 +29,7 @@ g++ -o test ./src/test.cpp
 ./test
 ```
 
-
+## Rust
+```bash
+cargo run
+```
