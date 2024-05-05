@@ -1,15 +1,12 @@
+#[derive(Debug)]
+enum RustEnum {
+    A = 1,
+    B = 2,
+    C = 3
+}
+
 fn main() {
-//     let mut a = vec![];
-//     let b = &mut a;
-//
-//     b.push(1);
-//
-//     println!("{:?}", b);
-//     println!("{:?}", a);
-
-    let mut x = 5;
-    let z = &mut x;
-
-    *z = 7;
-    println!("{:?}", z);
+    println!("{:?}", RustEnum::A);
+    println!("{:?}", RustEnum::B);
+    println!("{:?}", RustEnum::C);
 }
