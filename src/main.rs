@@ -1,12 +1,15 @@
-#[derive(Debug)]
-enum RustEnum {
-    A = 1,
-    B = 2,
-    C = 3
+enum RSEnum {
+    Foo(i32);
+    Bar(String);
+    Baz(Vec<String>);
 }
 
 fn main() {
-    println!("{:?}", RustEnum::A);
-    println!("{:?}", RustEnum::B);
-    println!("{:?}", RustEnum::C);
+    let foo = RSEnum::Foo(42);
+    let bar = RSEnum::Bar("Hello".to_string());
+    let baz = RSEnum::Baz(vec!["a".to_string(), "b".to_string()]);
+
+    println!("{:?}", foo);
+    println!("{:?}", bar);
+    println!("{:?}", baz);
 }
