@@ -1,7 +1,8 @@
+#[derive(Debug)]
 enum RSEnum {
-    Foo(i32);
-    Bar(String);
-    Baz(Vec<String>);
+    Foo(i32),
+    Bar(String),
+    Baz(Vec<String>),
 }
 
 fn main() {
