@@ -13,4 +13,9 @@ fn main() {
     println!("{:?}", foo);
     println!("{:?}", bar);
     println!("{:?}", baz);
+
+    // get 42 from foo
+    if let RSEnum::Foo(value) = foo {
+        println!("Value of foo is: {}", value);
+    }
 }
