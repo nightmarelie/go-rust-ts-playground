@@ -18,4 +18,9 @@ fn main() {
     if let RSEnum::Foo(value) = foo {
         println!("Value of foo is: {}", value);
     }
+
+    match bar {
+        RSEnum::Bar(value) => println!("Value of bar is: {}", value),
+        _ => (),
+    }
 }
