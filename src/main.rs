@@ -1,26 +1,22 @@
 #[derive(Debug)]
-enum RSEnum {
-    Foo(i32),
-    Bar(String),
-    Baz(Vec<String>),
+enum Option2<T> {
+    None,
+    Some(T),
+}
+
+impl <T> Option2<T> {
+    fn unwrap(self) -> T {
+        match self {
+            Option2::None => panic!("called `Option::unwrap()` on a `None` value"),
+            Option2::Some(value) => value,
+        }
+    }
 }
 
 fn main() {
-    let foo = RSEnum::Foo(42);
-    let bar = RSEnum::Bar("Hello".to_string());
-    let baz = RSEnum::Baz(vec!["a".to_string(), "b".to_string()]);
+    let x = Option2::Some(10);
+    println!("{:?}", x.unwrap());
 
-    println!("{:?}", foo);
-    println!("{:?}", bar);
-    println!("{:?}", baz);
-
-    // get 42 from foo
-    if let RSEnum::Foo(value) = foo {
-        println!("Value of foo is: {}", value);
-    }
-
-    match bar {
-        RSEnum::Bar(value) => println!("Value of bar is: {}", value),
-        _ => (),
-    }
+    let y: Option2<i32> = Option2::None;
+    println!("{:?}", y.unwrap());
 }
