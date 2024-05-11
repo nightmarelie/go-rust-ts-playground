@@ -22,10 +22,14 @@ impl <T> Option2<T> {
 
 fn main() {
     let x = Option2::Some(10);
-    println!("{:?}", x.unwrap());
-    println!("{:?}", x.is_some());
+
+    if x.is_some() {
+        println!("{:?}", x.unwrap());
+    }
 
     let y: Option2<i32> = Option2::None;
-    println!("{:?}", y.unwrap());
-    println!("{:?}", y.is_some());
+
+    if !y.is_some() {
+        println!("y is none");
+    }
 }
