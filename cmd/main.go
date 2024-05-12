@@ -1,16 +1,14 @@
 package main
 
-type GoEnum = int
+import "fmt"
 
-const (
-	One   GoEnum = 1
-	Two   GoEnum = 2
-	Three GoEnum = 3
-)
+func returnsError(value int) error {
+	return fmt.Errorf("error: %d", value)
+}
 
 func main() {
-	// print out enum values
-	println(One)
-	println(Two)
-	println(Three)
+	err := returnsError(1)
+	if err != nil {
+		fmt.Println(err)
+	}
 }
