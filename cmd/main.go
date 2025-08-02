@@ -2,6 +2,14 @@ package main
 
 import "fmt"
 
+type GoEnum = int
+
+const (
+	Foo1 GoEnum = iota
+	Bar1
+	Baz1
+)
+
 func returnsError(value int) error {
 	return fmt.Errorf("error: %d", value)
 }
@@ -23,4 +31,4 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-}
+} 

@@ -5,11 +5,3 @@ enum TSEnum {
 }
 
 console.log(TSEnum.A, TSEnum.B, TSEnum.C);
-
-
-const a: number[] = [];
-const b = a;
-
-b.push(1);
-
-console.log(a);

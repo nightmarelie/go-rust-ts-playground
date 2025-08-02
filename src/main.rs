@@ -32,11 +32,4 @@ fn main() {
     if !y.is_some() {
         println!("y is none");
     }
-
-    let a = vec![];
-    let mut b = a;
-
-    b.push(1);
-
-    println!("{:?}", a);
 }
