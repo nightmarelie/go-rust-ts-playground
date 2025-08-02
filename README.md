@@ -1,6 +1,6 @@
-# Initialization
+# Go, Rust, TS Playground
 
-## Installation
+## Initialization
 
 ```bash
 go mod init git
